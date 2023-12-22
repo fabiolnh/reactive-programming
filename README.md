@@ -35,19 +35,24 @@
   * The libs make the code as simple as possible and you can focus on the business.
   * Better latency and throughput compared with the traditional Thread-Per-Request
 
-- Blocking I/O
+- Blocking I/O (Conventional method)
   * Code:
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io.jpg?raw=true)
   * Result:
+    - Observations: 
+      * The Thread 1 will be available only when everything is finished. (in Java, each Thread represents at least 1MB. So, if you increase the number of threads, it will cost too much in memory and the CPU will be in iddle)
+      * Code is simple but is not efficient.
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io%20-%20result.jpg?raw=true)
 
-- Async - Blocking I/O
+- Async - Blocking I/O (This model is asynchronous, however, it is still blocking)
   * Code:
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/async%20-%20blocking%20io.jpg?raw=true)
   * Result:
+    - Observations:
+      * With this way, you gain in time. You can work parallelly. However, the main thread will still wait for the other two threads to finish and you will work with 3 threads, so: more memory, more cost. 
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/async%20-%20blocking%20io%20-%20result.jpg?raw=true)
 
-- Reactive - Non Blocking I/O
+- Reactive - Non Blocking I/O (Reactive Programming): This example is using WebFlux from Spring.
   * Code: 
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/reactive%20-%20non%20blocking%20io.jpg?raw=true)
   * Result:
