@@ -28,7 +28,7 @@
   * Publisher Categories:
      - Hot: (Example in real life: you arrive late at the cinema but the movie is in the middle, you cannot go back)
      - Cold: (Example in real life: you choose a movie in netflix and you can go back and forward and watch the time that you want)
-  * Schedulers: It is an abstraction to facilitate everything that is low level threading. So, instead of you work in a low level getting a thread and sending a message to other one, block, contention, etc., the framework will make available the scheduler and you do it with a unique line in the code.
+  * Schedulers: It is an abstraction to facilitate everything that is low level threading. So, instead of you working at a low level getting a thread and sending a message to other one, block, contention, etc., the framework will make available the scheduler and you do it with a unique line in the code.
   * Observable Pattern: The libs implements the 
   * Pull vs Push ( + Backpressure): Backpressure: The producer can answers "at this moment I can process X messages"
   * The libs in Reactive Program abstract all the complexity with Threads, Concurrency, Locks, Latches, Semaphore, etc.
@@ -40,7 +40,7 @@
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io.jpg?raw=true)
   * Result:
     - Observations: 
-      * The Thread 1 will be available only when everything is finished. (in Java, each Thread represents at least 1MB. So, if you increase the number of threads, it will cost too much in memory and the CPU will be in iddle)
+      * Thread 1 will be available only when everything is finished. (in Java, each Thread represents at least 1MB. So, if you increase the number of threads, it will cost too much in memory and the CPU will be in idle)
       * Code is simple but is not efficient.
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io%20-%20result.jpg?raw=true)
 
@@ -49,11 +49,13 @@
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/async%20-%20blocking%20io.jpg?raw=true)
   * Result:
     - Observations:
-      * With this way, you gain in time. You can work parallelly. However, the main thread will still wait for the other two threads to finish and you will work with 3 threads, so: more memory, more cost. 
+      * This way, you gain time. You can work parallelly. However, the main thread will still wait for the other two threads to finish and you will work with 3 threads, so: more memory, more cost. 
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/async%20-%20blocking%20io%20-%20result.jpg?raw=true)
 
-- Reactive - Non Blocking I/O (Reactive Programming): This example is using WebFlux from Spring.
+- Reactive - Non Blocking I/O (Reactive Programming): The effective way. This example is using WebFlux from Spring.
   * Code: 
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/reactive%20-%20non%20blocking%20io.jpg?raw=true)
   * Result:
+    - Observations:
+      * The Thread 1 is the Event-loop thread. It will never be blocked. It will keep receiving requests. It will send the processment to other threads, then get the answer from all the threads and respond to the requester.
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/reactive%20-%20non%20blocking%20io%20-%20result.jpg?raw=true)
