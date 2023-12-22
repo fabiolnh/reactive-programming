@@ -1,4 +1,4 @@
-# Reactive Programming
+# Reactive Programming (Currently Studying)
 
 - Problems without Reactive Programming:
   * 300 threads in the pool -> 1500 requests per second (suppose: Request per second: 5 - 200ms each)
