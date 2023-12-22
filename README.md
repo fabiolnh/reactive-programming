@@ -38,7 +38,7 @@
 - Blocking I/O
   * Code:
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io.jpg?raw=true)
-  Result:
+  * Result:
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io%20-%20result.jpg?raw=true)
 
 - Async - Blocking I/O
