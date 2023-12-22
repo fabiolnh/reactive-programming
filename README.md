@@ -34,3 +34,21 @@
   * The libs in Reactive Program abstract all the complexity with Threads, Concurrency, Locks, Latches, Semaphore, etc.
   * The libs make the code as simple as possible and you can focus on the business.
   * Better latency and throughput compared with the traditional Thread-Per-Request
+
+- Blocking I/O
+  * Code:
+    - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io.jpg?raw=true)
+  Result:
+    - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/blocking%20io%20-%20result.jpg?raw=true)
+
+- Async - Blocking I/O
+  * Code:
+    - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/async%20-%20blocking%20io.jpg?raw=true)
+  * Result:
+    - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/async%20-%20blocking%20io%20-%20result.jpg?raw=true)
+
+- Reactive - Non Blocking I/O
+  * Code: 
+    - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/reactive%20-%20non%20blocking%20io.jpg?raw=true)
+  * Result:
+    - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/reactive%20-%20non%20blocking%20io%20-%20result.jpg?raw=true)
