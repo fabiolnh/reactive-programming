@@ -3,7 +3,7 @@
 - Problems without Reactive Programming:
   * 300 threads in the pool -> 1500 requests per second (suppose: Request per second: 5 - 200ms each)
   * Each thread is responsible for each request
-  * Too many request could result in lost of responsivity, and them unavailability
+  * Too many request could result in lost of responsivity, and then unavailability
   * If you increase the number of threads, the memory will increase too much (too much cost).
   
 - How can it get better?
@@ -11,7 +11,7 @@
   * Ways:
     1) Light Weight Threads (Coroutines). Ex: Go, Kotlin
     2) Reactive in an Interservices level (using a broker - messaging)
-    3) Reactive in a Service level (reactive programming)
+    3) Reactive in a Service level (Reactive Programming)
    
 - Observations
   * Reactive Program is not a paradigm (functional, structural, object oriented)
