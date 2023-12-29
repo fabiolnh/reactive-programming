@@ -61,9 +61,9 @@
     - ![](https://github.com/fabiolnh/reactive-programming/blob/main/assets/reactive%20-%20non%20blocking%20io%20-%20result.jpg?raw=true)
 
 - Cost:
- * Add Complexity to the code
- * Debugging gets harder and instrumentation with APM does not work properly (the stack trace does not work well) (to work properly, you have to do manually).
- * Does not have benefits for low throughput and low latency (only use if you need it)
- * Does not have too much benefits for blocking calls.
+  * Add Complexity to the code
+  * Debugging gets harder and instrumentation with APM does not work properly (the stack trace does not work well) (to work properly, you have to do manually).
+  * Does not have benefits for low throughput and low latency (only use if you need it)
+  * Does not have too much benefits for blocking calls.
 
 - Credits: Gabriel Suaki
