@@ -66,4 +66,8 @@
   * Does not have benefits for low throughput and low latency (only use if you need it)
   * Does not have too much benefits for blocking calls.
 
+- OBS:
+  * Latency (time interval that a system takes to process data or respond to a request)
+  * Throughput (amount of data that can be transmitted or processed in a given period of time)
+
 - Credits: Gabriel Suaki (https://www.youtube.com/watch?v=7DgcCNn9mA8)
