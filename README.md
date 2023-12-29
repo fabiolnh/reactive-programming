@@ -1,4 +1,4 @@
-# Reactive Programming (Currently Studying)
+# Reactive Programming
 
 - Problems without Reactive Programming:
   * 300 threads in the pool -> 1500 requests per second (suppose: Request per second: 5 - 200ms each)
@@ -66,4 +66,4 @@
   * Does not have benefits for low throughput and low latency (only use if you need it)
   * Does not have too much benefits for blocking calls.
 
-- Credits: Gabriel Suaki
+- Credits: Gabriel Suaki (https://www.youtube.com/watch?v=7DgcCNn9mA8)
